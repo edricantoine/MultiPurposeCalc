@@ -67,6 +67,53 @@ void conv_between_temps() {
 
  
 
+  
+
+}
+
+void bmi_calc() {
+
+  double height;
+  double weight;
+  double bmi;
+  double h2;
+
+  std::cout << "Enter your weight in KILOGRAMS:\n";
+  std::cin >> weight;
+
+  std::cout << "Enter your height in METRES:\n";
+  std::cin >> height;
+
+  h2 = (height * height);
+  bmi = weight / h2;
+
+  if(bmi < 18.5) {
+
+    std::cout << "Your BMI is " << bmi << ". You are underweight.\n";
+    return;
+    
+  } else if (bmi >=  18.5 && bmi < 25) {
+
+     std::cout << "Your BMI is " << bmi << ". You are normal.\n";
+     return;
+    
+  } else if (bmi >=  25 && bmi < 30) {
+
+     std::cout << "Your BMI is " << bmi << ". You are overweight.\n";
+     return;
+    
+  } else if (bmi >=  30 && bmi < 35) {
+
+     std::cout << "Your BMI is " << bmi << ". You are obese.\n";
+     return;
+    
+  } else if (bmi >= 35) {
+
+     std::cout << "Your BMI is " << bmi << ". You are extremely obese.\n";
+     return;
+    
+  }
+
 
 }
 
