@@ -118,3 +118,73 @@ void bmi_calc() {
 }
 
 
+void ft_and_m() {
+
+  double from;
+  double to;
+  int choice;
+
+  std::cout << "Type 1 if you want to convert from feet to metres. Type 2 if you want to convert from metres to feet.\n";
+
+  std::cin >> choice;
+
+  if(choice == 1) {
+
+    std::cout << "Length to convert:\n";
+    std::cin >> from;
+
+    to = from * 0.3048;
+
+    std::cout << to << "\n";
+
+  } else if (choice == 2) {
+
+    std::cout << "Length to convert:\n";
+    std::cin >> from;
+
+    to = from * 3.28084;
+
+    std::cout << to << "\n";
+
+  }
+
+
+
+}
+
+void lb_and_kg() {
+
+  double from;
+  double to;
+  int choice;
+
+  std::cout << "Type 1 if you want to convert from pounds to kilograms. Type 2 if you want to convert from kilograms to pounds.\n";
+
+  std::cin >> choice;
+
+  if(choice == 1) {
+
+    std::cout << "Length to convert:\n";
+    std::cin >> from;
+
+    to = from * 0.453592;
+
+    std::cout << to << "\n";
+
+  } else if (choice == 2) {
+
+    std::cout << "Length to convert:\n";
+    std::cin >> from;
+
+    to = from * 2.20462;
+
+    std::cout << to << "\n";
+
+  }
+
+}
+
+
+
+
+
